@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Contacts</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<head>
+  <style>
+    .Footer{
+  left:0;
+  bottom:0;
+  width:100%;
+  background-color:#908FB3;
+  color:white;
+  text-align:center;
+}
+.infoot{
+  text-align:left;
+}
+
+body{
+  background-color:#D3D5EB;
+text-align:center;
+}
+
+ul{
+  list-style-type: none;
+  margin:0;
+  padding:0;
+  overflow:hidden;
+  background-color:#908FB3;
+  top:0;
+  width:100%;
+}
+li{
+  float:right;
+}
+
+li a, .dropbtn{
+  display: inline-block;
+  color:white;
+  text-align:center;
+  padding: 14px 16px;
+  text-decoration:none;
+}
+
+li a:hover, .dropdown:hover .dropbtn{
+  background-color:white;
+  color:black;
+}
+
+li.dropdown{
+  display:inline-block;
+}
+
+.dropdown-content{
+  display:none;
+  position:absolute;
+  background-color: #f9f9f9;
+  min-width:160px;
+  box-shadow:0px 8px 16px 0px
+    rgba (0,0,0,0.2);
+  z-index:1;
+}
+
+.dropdown-content a{
+  color:black;
+  padding: 12px 16px;
+  text-decoration:none;
+  display:block;
+  text-align:left;
+}
+
+.dropdown-content a:hover{
+  background-color:#f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display:block;
+}
+h1 {
+  text-align: center;
+  margin: 35px 0 20px 0 !important;
+}
+  </style>
+</head>
+<body>
+  <ul>
+    <li><a href="#contact">Contact</a></li>
+      <li><a href="#Bio">About</a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)"
+           class="dropbtn">Projects</a>
+      <div class="dropdown-content">
+        <a href="#link1">Adobe</a>
+        <a href="#link2">Illustrations</a>
+        <a href="#link3">Paintings</a>
+        <a href="#link3">Sculptures</a>
+      </div>
+      </li>
+     <li><a href="#Home">Home</a></li>
+    </ul>
+  <h1></h1>
+  <img src="https://mikaela-was-here.github.io/hosted-assests/DragonContacts.jpg" style="width:50%;">
+  <div class="container">
+  <h1>Send an Email?</h1>
+  <form target="_blank" action="https://formsubmit.co/mwoll21@gmail.com" method="POST">
+    <div class="form-group">
+      <div class="form-row">
+        <div class="col">
+          <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+        </div>
+        <div class="col">
+          <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+  </form>
+</div>
+  
+  <div class="Footer">
+    <p><br></p>
+    <div class="infoot">
+      <p>Contacts</p>
+    <p>About Me</p>
+      <br>
+    </div>
+  </div>
+<!-- partial -->
+  
+</body>
+</html>
